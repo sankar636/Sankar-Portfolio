@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home';
+import About from './Components/About';
 
 const App = () => {
   const handleDownloadAndView = (event) => {
@@ -23,7 +24,7 @@ const App = () => {
     <>
       <Navbar handleDownloadAndView={handleDownloadAndView}/>
       <Home />
-
+      <About />
     </>
   )
 }
