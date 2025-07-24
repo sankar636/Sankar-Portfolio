@@ -28,7 +28,7 @@ const Navbar = ({ handleDownloadAndView }) => {
     }, []);
 
     return (
-        <div id="fade-in3" className={`flex h-[70px] items-center justify-between w-full max-w-[1300px] fixed top-0 left-0 right-0 z-[100] mx-auto px-[10px] transition ease-in duration-300 ${scrolled ? 'scrolled' : ''}`}
+        <div id="fade-in3" className={`flex h-[70px] items-center justify-between w-full max-w-[1300px] fixed top-0 left-0 right-0 z-[100] mx-auto px-[10px] transition ease-in duration-300 ${scrolled ? 'scrolled bg-[#141428E6] rounded-b-2xl hidden' : ''}`}
         >
             <div className="nav-item">
                 <span className="nav-title">  <div className="flex font-figtree font-medium text-[1.8rem] m-[10px] text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-br hover:from-[#e66465] hover:to-[#9198e5] hover:bg-clip-text hover:text-transparent">S<span className="logo-backtick font-black bg-gradient-to-br from-[#e66465] to-[#9198e5] bg-clip-text text-transparent transition-all duration-500 ease-in-out group-hover:bg-none group-hover:bg-clip-border group-hover:text-[#ebe5e5]">/</span>Sahu</div> </span>
@@ -49,8 +49,8 @@ const Navbar = ({ handleDownloadAndView }) => {
                     </span>
 
                     <span data-tooltip-id="tooltip-1" className="nav-title">
-                        <a href="#blog">
-                            <SlSpeech className="nav-icon" /> Blog
+                        <a href="#skills">
+                            <SlSpeech className="nav-icon" /> Skills
                         </a>
                     </span>
 
@@ -75,7 +75,7 @@ const Navbar = ({ handleDownloadAndView }) => {
                         }} /> View my CV  </span>
 
                 </div>
-                <Tooltip
+                {/* <Tooltip
                     id="tooltip-1"
                     place="bottom"
                     content="Coming Soon!"
@@ -84,7 +84,7 @@ const Navbar = ({ handleDownloadAndView }) => {
                         color: '#e66465',
                         fontFamily: 'figtree, sans-serif'
                     }}
-                />
+                /> */}
             </div>
 
             <button className="nav-hamburger" onClick={() => setOpen(!isOpen)} aria-label="Toggle Menu">
