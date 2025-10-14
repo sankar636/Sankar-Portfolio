@@ -2,7 +2,7 @@ import React from 'react'
 import { LuGithub } from "react-icons/lu";
 import { GoLinkExternal } from "react-icons/go";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import { motion } from "framer-motion"; // fixed import
+import { motion } from "framer-motion";
 
 const ProjectCard = (props) => {
     const {
