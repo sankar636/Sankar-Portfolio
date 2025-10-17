@@ -436,6 +436,28 @@
     overflow: hidden;
     border: none;
   }
+  .send-form {
+    display: flex;
+    width: calc(100% - 20px);
+    height: fit-content;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    font-weight: 500;
+    font-family: 'Figtree', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #e65555, #7079d6);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    box-shadow: 0 4px 16px 0 rgba(230, 100, 101, 0.10), 0 1.5px 4px 0 rgba(145, 152, 229, 0.10);
+    transition: background-position 0.6s cubic-bezier(0.4, 0, 2, 1), box-shadow 0.3s;
+    overflow: hidden;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   
   .footer {
     display: flex;
@@ -900,6 +922,12 @@
     transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
   }
   
+  .send-form {
+    transition: all 0.6s ease;
+    background-position: 100% 50%;
+    box-shadow: 0 6px 24px 0 rgba(230, 100, 101, 0.18), 0 2px 8px 0 rgba(145, 152, 229, 0.15);
+    transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
+  }
   @media (min-width: 1000px) and (max-width: 1200px) {
   
     .navigation {
