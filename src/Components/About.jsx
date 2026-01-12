@@ -1,11 +1,11 @@
-import React from "react";
-import { motion } from "motion/react";
-import "../App.css";
-import { GoPerson } from "react-icons/go";
-import { RiTimeLine } from "react-icons/ri";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoGameController } from "react-icons/io5";
-import { FaGraduationCap } from "react-icons/fa";
+import React from 'react';
+import { motion } from 'motion/react';
+import '../App.css';
+import { GoPerson } from 'react-icons/go';
+import { RiTimeLine } from 'react-icons/ri';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IoGameController } from 'react-icons/io5';
+import { FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -14,45 +14,45 @@ const About = () => {
       id="about"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="about" id="about">
         <div className="section-heading">
-          About{"\u00A0"} <span className="gradient">Me</span>
+          About{'\u00A0'} <span className="gradient">Me</span>
         </div>
         <div className="About-image-container">
-          <img className="About-img" src="profileImage.jpeg" />
+          <img className="About-img" src="sss_photo.png" />
         </div>
         <div className="About-text">
           <div className="About-paragraph">
             <span className="About-para-title">
-              {" "}
-              <GoPerson id="about-icon" />{" "}
-              <span className="gradient"> About Me </span>{" "}
+              {' '}
+              <GoPerson id="about-icon" />{' '}
+              <span className="gradient"> About Me </span>{' '}
             </span>
 
             <span className="About-paragraph-text">
               I'm currently pursuing MCA at Odisha University of Technology and
               Research, Bhubaneswar. I'm passionate about developing engaging
-              and efficient web experiences using modern tools like{" "}
-              <strong className="highlight-1">React</strong> and{" "}
+              and efficient web experiences using modern tools like{' '}
+              <strong className="highlight-1">React</strong> and{' '}
               <strong className="highlight-1">TypeScript</strong>. I’m always
-              exploring new technologies and improving my skills in{" "}
+              exploring new technologies and improving my skills in{' '}
               <strong className="highlight-1">
                 Full-Stack Web Development
-              </strong>{" "}
+              </strong>{' '}
               to become a better problem solver and team contributor.
             </span>
           </div>
           <div className="About-paragraph">
             <span className="About-para-title">
-              {" "}
+              {' '}
               <IoGameController
                 id="about-icon"
-                style={{ verticalAlign: "middle" }}
-              />{" "}
-              <span className="gradient"> My Hobbies & Personal Life </span>{" "}
+                style={{ verticalAlign: 'middle' }}
+              />{' '}
+              <span className="gradient"> My Hobbies & Personal Life </span>{' '}
             </span>
 
             <span className="About-paragraph-text">
@@ -63,31 +63,39 @@ const About = () => {
           </div>
           <div className="About-paragraph">
             <span className="About-para-title">
-              {" "}
+              {' '}
               <FaGraduationCap
                 id="about-icon"
-                style={{ verticalAlign: "middle" }}
-              />{" "}
-              <span className="gradient"> What I'm doing now </span>{" "}
+                style={{ verticalAlign: 'middle' }}
+              />{' '}
+              <span className="gradient"> What I'm doing now </span>{' '}
             </span>
             <span id="para-finish">
-              I am currently working as a Web Development Intern at{" "} 
+              I worked as a Web Development Intern at{' '}
               <a
                 href="https://edubiznetworks.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "hsl(38 99% 58%)", display: "inline-flex", alignItems: "center", gap: "4px" }}
+                style={{
+                  color: 'hsl(38 99% 58%)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                }}
               >
-                <span style={{ textDecoration: "underline" }}>
+                <span style={{ textDecoration: 'underline' }}>
                   EduBiz Networks
-                </span>{" "}
+                </span>{' '}
                 <FaExternalLinkAlt
                   size="0.8em"
-                  style={{ verticalAlign: "middle", marginLeft: "2px" }}
+                  style={{ verticalAlign: 'middle', marginLeft: '2px' }}
                 />
-              </a>
-              , while also building personal projects and exploring new
-              technologies.
+              </a>{' '}
+              from <strong>September to December</strong>, and was promoted to{' '}
+              <strong>Full-Stack Developer Intern</strong>. I am currently
+              working in this role from <strong>December</strong>,
+              where I build production-ready applications
+              and explore modern web technologies.
             </span>
           </div>
         </div>
