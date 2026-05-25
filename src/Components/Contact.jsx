@@ -1,26 +1,26 @@
-import React, { useRef } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoMail, IoSend } from "react-icons/io5";
-import { motion } from "motion/react";
-import "../App.css";
-import emailjs from "@emailjs/browser";
+import React, { useRef } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { IoMail, IoSend } from 'react-icons/io5';
+import { motion } from 'motion/react';
+import '../App.css';
+import emailjs from '@emailjs/browser';
 function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    const serviceID = "service_aw4yq9x";
-    const templateID = "template_grz4sv7";
-    const publicKey = "1VqfJIAKy0PCdUPzN";
+    const serviceID = import.meta.env.VITE_serviceID;
+    const templateID = import.meta.env.VITE_templateID;
+    const publicKey = import.meta.env.VITE_publicKey;
     emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
       (result) => {
         console.log(result.text);
-        alert("Message sent successfully!");
+        alert('Message sent successfully!');
         form.current.reset();
       },
       (error) => {
         console.log(error.text);
-        alert("An error occurred, please try again.");
-      }
+        alert('An error occurred, please try again.');
+      },
     );
   };
 
@@ -30,7 +30,7 @@ function Contact() {
       id="contact"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="contact" id="contact">
@@ -38,8 +38,8 @@ function Contact() {
 
         <div className="social-bar">
           <span className="social-heading">
-            {" "}
-            Want to get in touch? contact me via email below, or via my socials:{" "}
+            {' '}
+            Want to get in touch? contact me via email below, or via my socials:{' '}
           </span>
 
           <div className="icons">
@@ -90,13 +90,11 @@ function Contact() {
                     </button>
 
                 </form> */}
-        <form ref={form} onSubmit={sendEmail}
-        className="contact-form"
-        >
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           {/* <label>Name</label> */}
           <input
             type="text"
-            name="from_name" 
+            name="from_name"
             required
             className="contact-input"
             placeholder="Name"
@@ -119,9 +117,7 @@ function Contact() {
             placeholder="Your Message"
           />
 
-          <input type="submit" value="Send Message" 
-          className="send-form"
-          />
+          <input type="submit" value="Send Message" className="send-form" />
         </form>
       </div>
     </motion.div>
