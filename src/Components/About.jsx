@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'motion/react';
 import '../App.css';
 import { GoPerson } from 'react-icons/go';
-import { RiTimeLine } from 'react-icons/ri';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { IoGameController } from 'react-icons/io5';
 import { FaGraduationCap } from 'react-icons/fa';
@@ -19,59 +18,69 @@ const About = () => {
     >
       <div className="about" id="about">
         <div className="section-heading">
-          About{'\u00A0'} <span className="gradient">Me</span>
+          About <span className="gradient">Me</span>
         </div>
+
         <div className="About-image-container">
-          <img className="About-img" src="sss_photo.png" />
+          <img className="About-img" src="sss_photo.png" alt="Profile" />
         </div>
+
         <div className="About-text">
+          {/* About Me */}
           <div className="About-paragraph">
             <span className="About-para-title">
-              {' '}
               <GoPerson id="about-icon" />{' '}
-              <span className="gradient"> About Me </span>{' '}
+              <span className="gradient"> About Me </span>
             </span>
 
             <span className="About-paragraph-text">
               I'm currently pursuing MCA at Odisha University of Technology and
-              Research, Bhubaneswar. I'm passionate about developing engaging
-              and efficient web experiences using modern tools like{' '}
-              <strong className="highlight-1">React</strong> and{' '}
-              <strong className="highlight-1">TypeScript</strong>. I’m always
-              exploring new technologies and improving my skills in{' '}
+              Research, Bhubaneswar. I’m passionate about both{' '}
+              <strong className="highlight-1">SAP ABAP Development</strong> and{' '}
               <strong className="highlight-1">
                 Full-Stack Web Development
+              </strong>
+              . I enjoy building scalable applications and learning modern
+              technologies like <strong className="highlight-1">React</strong>,{' '}
+              <strong className="highlight-1">Next.js</strong>,{' '}
+              <strong className="highlight-1">Node.js</strong>, and{' '}
+              <strong className="highlight-1">TypeScript</strong>. I’m also an{' '}
+              <strong className="highlight-1">
+                SAP Certified Associate - ABAP Cloud Developer
               </strong>{' '}
-              to become a better problem solver and team contributor.
+              and continuously improving my skills in enterprise application
+              development and backend systems.
             </span>
           </div>
-          <div className="About-paragraph">
-            <span className="About-para-title">
-              {' '}
-              <IoGameController
-                id="about-icon"
-                style={{ verticalAlign: 'middle' }}
-              />{' '}
-              <span className="gradient"> My Hobbies & Personal Life </span>{' '}
-            </span>
 
-            <span className="About-paragraph-text">
-              I'm someone who really enjoys technology. I like exploring new
-              tools in my free time. My hobbies include playing chess and
-              reading books, which help me relax and learn new things.
-            </span>
-          </div>
+          {/* Current Work */}
           <div className="About-paragraph">
             <span className="About-para-title">
-              {' '}
               <FaGraduationCap
                 id="about-icon"
                 style={{ verticalAlign: 'middle' }}
               />{' '}
-              <span className="gradient"> What I'm doing now </span>{' '}
+              <span className="gradient"> What I'm doing now </span>
             </span>
+
             <span id="para-finish">
-              I worked as a Web Development Intern at{' '}
+              I have experience in both{' '}
+              <strong className="highlight-1">SAP ABAP Development</strong> and{' '}
+              <strong className="highlight-1">
+                Full-Stack Web Development
+              </strong>
+              . I have worked on SAP ABAP projects involving ALV Reports,
+              SmartForms, OpenSQL, and modular application development.
+              <br />
+              <br />I also worked as a{' '}
+              <span
+                style={{
+                  color: 'hsl(38 99% 58%)',
+                }}
+              >
+                Full Stack Development
+              </span>{' '}
+              Intern at{' '}
               <a
                 href="https://edubiznetworks.com/"
                 target="_blank"
@@ -85,17 +94,46 @@ const About = () => {
               >
                 <span style={{ textDecoration: 'underline' }}>
                   EduBiz Networks
-                </span>{' '}
+                </span>
+
                 <FaExternalLinkAlt
                   size="0.8em"
-                  style={{ verticalAlign: 'middle', marginLeft: '2px' }}
+                  style={{
+                    verticalAlign: 'middle',
+                    marginLeft: '2px',
+                  }}
                 />
               </a>{' '}
-              from <strong>September to December</strong>, and was promoted to{' '}
-              <strong>Full-Stack Developer Intern</strong>. I am currently
-              working in this role from <strong>December</strong>,
-              where I build production-ready applications
-              and explore modern web technologies.
+              from <strong>September to April</strong>, where I worked on
+              developing scalable and responsive web applications using{' '}
+              <strong>React</strong>, <strong>Next.js</strong>,{' '}
+              <strong>Tailwind CSS</strong>, and <strong>TypeScript</strong>. My
+              responsibilities included building interactive UI components,
+              integrating REST APIs, working with CMS platforms and third-party
+              services, and improving website performance, security, and
+              usability for production-ready deployments.
+              {/* Currently, I am
+              building production-ready applications using React, Next.js,
+              Tailwind CSS, Node.js, and modern web technologies while
+              continuously improving my backend and system design skills. */}
+            </span>
+          </div>
+
+          {/* Hobbies */}
+          <div className="About-paragraph">
+            <span className="About-para-title">
+              <IoGameController
+                id="about-icon"
+                style={{ verticalAlign: 'middle' }}
+              />{' '}
+              <span className="gradient"> My Hobbies & Personal Life </span>
+            </span>
+
+            <span className="About-paragraph-text">
+              I'm someone who really enjoys technology and problem-solving. In
+              my free time, I like exploring new tools and frameworks. My
+              hobbies include playing chess and reading books, which help me
+              improve my thinking ability and learn new perspectives.
             </span>
           </div>
         </div>

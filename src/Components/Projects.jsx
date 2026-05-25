@@ -1,18 +1,20 @@
-import React from "react";
-import { FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiCplusplus, SiMongodb, SiOpengl, SiTypescript } from "react-icons/si";
-import { SiExpress, SiSocketdotio  } from "react-icons/si";
-import { FaGoogle } from "react-icons/fa";
+import React from 'react';
+import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiCplusplus, SiMongodb, SiOpengl, SiTypescript } from 'react-icons/si';
+import { SiExpress, SiSocketdotio } from 'react-icons/si';
+import { FaGoogle } from 'react-icons/fa';
+import { SiSap } from 'react-icons/si';
+import { TbFileTypeSql } from 'react-icons/tb';
 
-import "react-tooltip/dist/react-tooltip.css";
-import "../App.css";
-import ProjectCard from "./ProjectCards";
+import 'react-tooltip/dist/react-tooltip.css';
+import '../App.css';
+import ProjectCard from './ProjectCards';
 
 function Projects() {
   return (
     <div className="projects" id="projects">
       <span className="section-heading">
-        Featured{"\u00A0"}
+        Featured{'\u00A0'}
         <div className="gradient"> Projects</div>
       </span>
       <span className="section-sub-heading">
@@ -23,40 +25,51 @@ function Projects() {
       </span>
 
       <div className="project-container">
-
-      <ProjectCard
+        <ProjectCard
           title="LinkedIn"
           description="Developed a full-stack professional networking platform using the MERN stack (MongoDB, Express, React, Node.js), featuring real-time messaging with Socket.IO, a dynamic content feed, and secure user authentication with JWT."
           src="LinkedIn.png"
           tags={[
-            { icon: <FaReact />, name: "React" },
-            { icon: <FaJs />, name: "JavaScript" },
-            { icon: <FaNodeJs />, name: "NodeJs" },
-            { icon: <SiExpress />, name: "Express.js" },
-            { icon: <SiMongodb />, name: "MongoDB" },
-            { icon: <SiSocketdotio />, name: "Socket.io"}
+            { icon: <FaReact />, name: 'React' },
+            { icon: <FaJs />, name: 'JavaScript' },
+            { icon: <FaNodeJs />, name: 'NodeJs' },
+            { icon: <SiExpress />, name: 'Express.js' },
+            { icon: <SiMongodb />, name: 'MongoDB' },
+            { icon: <SiSocketdotio />, name: 'Socket.io' },
           ]}
           link="https://linked-in-iota-snowy.vercel.app"
           github="https://github.com/sankar636/LinkedIn"
         />
-        
+        <ProjectCard
+          title="SAP ABAP Sales Order Management"
+          description="Developed an end-to-end SAP ABAP ALV Reporting solution for Sales Order Management using OpenSQL, SmartForms, and modular ABAP programming. Built optimized reports by integrating VBAK, VBAP, and MAKT tables with advanced JOIN queries and FOR ALL ENTRIES. Implemented dynamic ALV reports, SmartForms print preview integration, custom transaction codes, and reusable DDIC objects for a production-ready SAP solution."
+          src="SAP_ABAP.png"
+          tags={[
+            { icon: <SiSap />, name: 'SAP ABAP' },
+            { icon: <TbFileTypeSql />, name: 'OpenSQL' },
+            // { icon: <FaReact />, name: 'ALV Reports' },
+            // { icon: <SiExpress />, name: 'SmartForms' },
+          ]}
+          link="#"
+          github="https://github.com/sankar636/abap-sales-order-programs"
+        />
         <ProjectCard
           title="MoCab"
           description="MoCab is a modern cab booking platform that helps users find nearby drivers using real-time geolocation and MongoDB geospatial queries. It features secure authentication with JWT, driver and user dashboards, and a responsive UI. Built using the MERN stack with Express.js, React, and MongoDB."
           tags={[
-            { icon: <FaReact />, name: "React" },
-            { icon: <FaJs />, name: "JavaScript" },
-            { icon: <FaNodeJs />, name: "NodeJs" },
-            { icon: <SiMongodb />, name: "MongoDB" },
-            { icon: <SiExpress />, name: "Express" },
-            { icon: <FaGoogle />, name: "Google API" },
+            { icon: <FaReact />, name: 'React' },
+            { icon: <FaJs />, name: 'JavaScript' },
+            { icon: <FaNodeJs />, name: 'NodeJs' },
+            { icon: <SiMongodb />, name: 'MongoDB' },
+            { icon: <SiExpress />, name: 'Express' },
+            { icon: <FaGoogle />, name: 'Google API' },
           ]}
           src="MoCab.png"
           link="https://mo-cab.vercel.app/"
           github="https://github.com/sankar636/MoCab"
         />
 
-        <ProjectCard
+        {/* <ProjectCard
           title="Hotel Booking Website"
           description="A full-stack hotel booking platform where users can search for hotels, view details, and make reservations. It features secure authentication, user dashboards. Built using React, Node.js, Express, and MongoDB. The site is styled with Tailwind CSS and uses JWT for authentication."
           src="Hotel-Booking.png"
@@ -69,18 +82,18 @@ function Projects() {
           ]}
           link="https://github.com/sankar636/Hotel-Booking"
           github="https://github.com/sankar636/Hotel-Booking"
-        />
+        /> */}
 
         <ProjectCard
           title="WellNess"
           description="A serene, full-stack wellness platform designed for sharing articles, featuring an intuitive React front-end for a seamless user journey, all powered by a robust Node.js/Express API that manages every post and category."
           src="WellNess.png"
           tags={[
-            { icon: <FaReact />, name: "React" },
-            { icon: <FaJs />, name: "JavaScript" },
-            { icon: <FaNodeJs />, name: "NodeJs" },
-            { icon: <SiExpress />, name: "Express.js" },
-            { icon: <SiMongodb />, name: "MongoDB" },
+            { icon: <FaReact />, name: 'React' },
+            { icon: <FaJs />, name: 'JavaScript' },
+            { icon: <FaNodeJs />, name: 'NodeJs' },
+            { icon: <SiExpress />, name: 'Express.js' },
+            { icon: <SiMongodb />, name: 'MongoDB' },
           ]}
           link="https://well-ness-app.vercel.app/"
           github="https://github.com/sankar636/WellNessApp"
