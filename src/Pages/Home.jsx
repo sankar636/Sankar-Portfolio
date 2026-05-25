@@ -14,8 +14,8 @@ const Home = () => {
     }
 
     const link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/file/d/1Y-2XmnIxFMG3Qt5pkYXGSPadyKj_45wZ/view";
+    link.href = '/Sankarshan_SAP_ABAP_Resume.pdf';
+    link.download = '/Sankarshan_SAP_ABAP_Resume.pdf';
     link.target = "_blank";
     // link.download = 'https://drive.google.com/file/d/1Y-2XmnIxFMG3Qt5pkYXGSPadyKj_45wZ/view';
     document.body.appendChild(link);
