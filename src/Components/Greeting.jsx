@@ -1,10 +1,10 @@
-import { TypeAnimation } from "react-type-animation";
-import { LuGithub } from "react-icons/lu";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { HiArrowDown, HiDownload } from "react-icons/hi";
+import { TypeAnimation } from 'react-type-animation';
+import { LuGithub } from 'react-icons/lu';
+import { IoLogoLinkedin } from 'react-icons/io5';
+import { HiArrowDown, HiDownload } from 'react-icons/hi';
 
-import GradientText from "./GreetingText";
-import "../App.css";
+import GradientText from './GreetingText';
+import '../App.css';
 
 const Greeting = ({ handleDownloadAndView }) => {
   return (
@@ -15,7 +15,7 @@ const Greeting = ({ handleDownloadAndView }) => {
             Hey, I'm&nbsp;
           </span>
           <GradientText
-            colors={["#e66465", "#9198e5", "#e66465", "#9198e5"]}
+            colors={['#e66465', '#9198e5', '#e66465', '#9198e5']}
             animationSpeed={4}
             showBorder={false}
             className=""
@@ -28,11 +28,11 @@ const Greeting = ({ handleDownloadAndView }) => {
           <TypeAnimation
             className="greeting-subtitle"
             sequence={[
-              " Front End Developer",
+              ' SAP ABAP Developer',
               2000,
-              " React Developer",
+              ' React Developer',
               2000,
-              " Tech Enthusiast",
+              ' Tech Enthusiast',
               2000,
             ]}
             speed={10}
@@ -43,9 +43,9 @@ const Greeting = ({ handleDownloadAndView }) => {
 
         <span className="greeting-text-container" id="fade-in2">
           <span className="greeting-text">
-            I am actively looking for a full-time role in web development. If
-            you'd like to connect, please reach out via{" "}
-            <span className="text-[#ff8a8b] inline">LinkedIn</span> or{" "}
+            I am actively looking for a full-time role in SAP ABAP development
+            and web development. If you'd like to connect, please reach out via{' '}
+            <span className="text-[#ff8a8b] inline">LinkedIn</span> or{' '}
             <span className="text-[#ff8a8b] inline">Email</span>.
           </span>
         </span>
@@ -55,10 +55,10 @@ const Greeting = ({ handleDownloadAndView }) => {
             <div className="social-item">
               <HiDownload
                 style={{
-                  fontSize: "20px",
-                  marginRight: "10px",
-                  verticalAlign: "center",
-                  color: "white",
+                  fontSize: '20px',
+                  marginRight: '10px',
+                  verticalAlign: 'center',
+                  color: 'white',
                 }}
               />
               <span>View my CV</span>
@@ -75,9 +75,9 @@ const Greeting = ({ handleDownloadAndView }) => {
                 <IoLogoLinkedin
                   id="socialHover"
                   style={{
-                    fontSize: "30px",
-                    margin: "10px",
-                    verticalAlign: "center",
+                    fontSize: '30px',
+                    margin: '10px',
+                    verticalAlign: 'center',
                   }}
                 />
               </a>
@@ -94,9 +94,9 @@ const Greeting = ({ handleDownloadAndView }) => {
                 <LuGithub
                   id="socialHover"
                   style={{
-                    fontSize: "30px",
-                    margin: "10px",
-                    verticalAlign: "center",
+                    fontSize: '30px',
+                    margin: '10px',
+                    verticalAlign: 'center',
                   }}
                 />
               </a>
